@@ -1,0 +1,8 @@
+<h1>Recipe list </h1>
+
+
+<% @recipes.each do |recipe| %>
+<p> <%= recipe.name %> <%= recipe.description %> <a href= '/destroy'> Delete </a></p>
+ <% end %>
+
+<a href= '/new'> Add a recipe </a>
